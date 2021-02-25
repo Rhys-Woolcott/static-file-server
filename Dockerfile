@@ -21,7 +21,7 @@ RUN adduser --system --no-create-home --uid 1000 --shell /usr/sbin/nologin stati
 ################################################################################
 ## DEPLOYMENT CONTAINER
 ################################################################################
-FROM scratch
+FROM ubuntu
 
 EXPOSE 8080
 COPY --from=builder /serve /
